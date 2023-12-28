@@ -17,8 +17,8 @@ export const metadata = {
 }
 
 export default async function RootLayout({ children }) {
-  const resp = await fetch('http://localhost:9999/topics');
-  const topics = await resp.json();
+  // const resp = await fetch('http://localhost:9999/topics');
+  // const topics = await resp.json();
   return (
     // 헤드태그,상단메뉴 넣음
     <html>
@@ -37,13 +37,13 @@ export default async function RootLayout({ children }) {
 
             {/* 제목 */}
             <Typography variant="h5" component="div" sx={{ flexGrow: 1 }}>
-              테이크아웃 예약
+              <Link href="/">테이크아웃 예약</Link>
             </Typography>
 
             {/* 검색창 */}
             <div>
               <InputBase
-                placeholder="검색…"
+                placeholder="검색어를 입력해주세요"
                 inputProps={{ 'aria-label': 'search' }}
               />
               <IconButton type="submit" aria-label="search">
@@ -52,19 +52,21 @@ export default async function RootLayout({ children }) {
             </div>
 
             {/* 로그인 버튼 */}
-            <Button color="inherit">로그인</Button>
+            <Button color="inherit">
+              <Link href="/login">로그인</Link>
+            </Button>
           </Toolbar>
         </AppBar>
         <Box>
           {children}
         </Box>
-        <ul className='title'>
+        {/* <ul className='title'>
           {topics.map((topic) => {
             return <li key={topic.id}>
               {topic.title}
             </li>
           })}
-        </ul>
+        </ul> */}
       </body>
     </html>
   )
