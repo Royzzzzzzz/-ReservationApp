@@ -21,10 +21,10 @@ const Topic = mongoose.model('Topic', new mongoose.Schema({
 }));
 
 // 라우트 정의
-app.get('/topics', async (req, res) => {
-    const topics = await Topic.find();
-    res.json(topics);
-});
+// app.get('/topics', async (req, res) => {
+//     const topics = await Topic.find();
+//     res.json(topics);
+// });
 
 // 서버 실행
 app.listen(3001, () => {

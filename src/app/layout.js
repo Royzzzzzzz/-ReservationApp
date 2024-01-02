@@ -23,9 +23,8 @@ export default async function RootLayout({ children }) {
     // 헤드태그,상단메뉴 넣음
     <html>
       <body>
-        <AppBar position="static">
+        <AppBar position="static" className='header'>
           <Toolbar>
-            {/* 메뉴 버튼 */}
             <IconButton
               edge="start"
               color='white'
@@ -34,13 +33,12 @@ export default async function RootLayout({ children }) {
             >
               <MenuIcon />
             </IconButton>
-
-            {/* 제목 */}
             <Typography variant="h5" component="div" sx={{ flexGrow: 1 }}>
-              <Link href="/">테이크아웃 예약</Link>
+              <Link href="/">지금갑니다</Link>
             </Typography>
-
-            {/* 검색창 */}
+            <Typography variant="h5" component="div" sx={{ flexGrow: 1 }}>
+              <Link href="/list">db테스트</Link>
+            </Typography>
             <div>
               <InputBase
                 placeholder="검색어를 입력해주세요"
@@ -50,8 +48,6 @@ export default async function RootLayout({ children }) {
                 <SearchIcon />
               </IconButton>
             </div>
-
-            {/* 로그인 버튼 */}
             <Button color="inherit">
               <Link href="/login">로그인</Link>
             </Button>
