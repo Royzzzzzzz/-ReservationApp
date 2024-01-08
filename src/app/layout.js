@@ -25,7 +25,7 @@ export default async function RootLayout({ children }) {
     // 헤드태그,상단메뉴 넣음
     <html>
       <body>
-        <AppBar sx={{ backgroundColor: 'white', maxWidth: '1024px', margin: 'auto' }} position="static" className='header'>
+        <AppBar sx={{ backgroundColor: 'white', maxWidth: '1024px', margin: 'auto', boxShadow: 'none' }} position="static" className='header'>
           <Toolbar>
             <IconButton
               edge="start"
@@ -47,7 +47,8 @@ export default async function RootLayout({ children }) {
               </IconButton>
             </div>
             <Button color="inherit">
-              <Link sx={{ color: 'black' }} href="/login">로그인</Link>
+              <Link href="/login">
+                <Typography sx={{ color: 'black' }}>로그인</Typography></Link>
             </Button>
           </Toolbar>
         </AppBar>
