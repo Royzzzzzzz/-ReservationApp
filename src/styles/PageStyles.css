@@ -1,34 +1,32 @@
-/* src/styles/PageStyles.css */
+/* 버튼 컨테이너 스타일 */
 .button-container {
-    text-align: center;
     display: grid;
     grid-template-columns: repeat(4, 1fr);
-    gap: 1em;
-    justify-items: center;
-    margin: 2em;
-    height: 90vh;
-    align-items: center;
+    gap: 20px; /* 버튼 간격 */
+    padding: 20px; /* 컨테이너 패딩 */
 }
 
-.button-container .MuiButton-root {
-    width: 65%;
-    height: 300px;
-    font-size: 2em;
-}
+/* 애니메이션 버튼 스타일 */
 .animated-button {
-    position: relative;
-    overflow: hidden;
+    display: flex;
+    flex-direction: column; /* 세로 방향 정렬 */
+    align-items: center; /* 가운데 정렬 */
+    padding: 10px; /* 버튼 내부 패딩 */
+    background-color: #fff; /* 배경색 */
+    border-radius: 10px; /* 테두리 둥글게 */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* 그림자 효과 */
+    text-transform: none; /* 텍스트 대문자 방지 */
 }
 
-.animation-container {
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    z-index: -1;
+/* 이미지 스타일 */
+.animated-button img {
+    width: auto; /* 이미지 너비 자동 조정 */
+    height: 100px; /* 고정된 이미지 높이 */
+    margin-bottom: 1.5em; /* 이미지와 텍스트 간격 */
 }
 
+/* 버튼 텍스트 스타일 */
 .button-text {
-    margin-top: auto; /* 텍스트를 하단으로 이동 */
+    color: #333; /* 텍스트 색상 */
+    font-size: 1rem; /* 텍스트 크기 */
 }
