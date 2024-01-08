@@ -29,16 +29,16 @@ export default async function RootLayout({ children }) {
           <Toolbar>
             <IconButton
               edge="start"
-              color='white'
+              color='black'
               aria-label="menu"
               sx={{ mr: 1 }}
             >
               <MenuIcon />
             </IconButton>
-            <Typography variant="h5" component="div" sx={{ flexGrow: 1 }}>
+            <Typography variant="h5" component="div" sx={{ flexGrow: 1, color: 'black' }}>
               <Link href="/list">db테스트</Link>
             </Typography>
-            <Typography variant="h5" component="div" sx={{ flexGrow: 1 }}>
+            <Typography variant="h5" component="div" sx={{ flexGrow: 1, color: 'black' }}>
               <Link href="/">포장의 민족</Link>
             </Typography>
             <div>
