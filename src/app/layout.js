@@ -47,7 +47,7 @@ export default async function RootLayout({ children }) {
               </IconButton>
             </div>
             <Button color="inherit">
-              <Link href="/login">로그인</Link>
+              <Link sx={{ color: 'black' }} href="/login">로그인</Link>
             </Button>
           </Toolbar>
         </AppBar>

@@ -126,8 +126,8 @@ table {
 }
 /* 전역 css */
 .header {
-    background: transparent;
-    box-shadow: none;
+    background: transparent !important;
+    box-shadow: none !important;
     color: #333;
     font-weight: 700;
 }
