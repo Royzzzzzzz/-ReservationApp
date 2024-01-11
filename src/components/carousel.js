@@ -6,7 +6,7 @@ import 'swiper/css/navigation';
 import 'swiper/css/pagination';
 import 'swiper/css/scrollbar';
 
-const CarouselSlider = () => {
+const MainSlider = () => {
     const images = [
         'public/images/banner_001.png',
         'public/images/banner_002.png',

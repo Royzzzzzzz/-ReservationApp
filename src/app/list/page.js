@@ -10,7 +10,7 @@ export default async function Home() {
     console.log(result);
     return (
         <div>
-            안녕 여기에는 게시판을 만들어볼거야^_^
+            디비내용은? :
         </div>
     )
 }
