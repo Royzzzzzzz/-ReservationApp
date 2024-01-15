@@ -31,3 +31,7 @@
     font-size: 1rem; /* 텍스트 크기 */
 }
 
+.swiper-slide img {
+    width: 100%;
+    height: auto;
+  }

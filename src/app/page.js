@@ -1,14 +1,13 @@
-import React, { Suspense } from 'react';
+"use client";
+import React, { useState, useRef } from 'react';
 import '../styles/PageStyles.css';
 import Button from '@mui/material/Button';
+import AdCarousel from './_components/slide';
 
-// const AdCarousel = React.lazy(() => import('./_components/slide'));
 export default function Home() {
   return (
     <>
-      {/* <Suspense fallback={<div>Loading...</div>}>
-        <AdCarousel/>
-      </Suspense> */}
+    <AdCarousel/>
     <div className="button-container">
       <Button color="primary" className="animated-button">
         <img src="/images/menu_001.png" alt="한식" />
