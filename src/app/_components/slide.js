@@ -1,10 +1,9 @@
-
-import { Swiper, SwiperSlide } from 'swiper/react';
-import { Navigation, Scrollbar, Autoplay } from 'swiper/modules';
-import SwiperCore from 'swiper';
-import 'swiper/css';
-import 'swiper/css/navigation';
-import 'swiper/css/pagination';
+import { Swiper, SwiperSlide } from "swiper/react";
+import { Navigation, Scrollbar, Autoplay } from "swiper/modules";
+import SwiperCore from "swiper";
+import "swiper/css";
+import "swiper/css/navigation";
+import "swiper/css/pagination";
 const slideData = [
   {
     id: 1,
@@ -31,11 +30,11 @@ export default function AdCarousel() {
           disableOnInteraction: false, // 사용자 상호작용시 슬라이더 일시 정지 비활성
         }}
       >
-       {slideData.map((slide) => (
-            <SwiperSlide key={slide.id}>
-              <img src={slide.src} alt={slide.alt} />
-            </SwiperSlide>
-          ))}
+        {slideData.map((slide) => (
+          <SwiperSlide key={slide.id}>
+            <img src={slide.src} alt={slide.alt} style={{ width: "100%" }} />
+          </SwiperSlide>
+        ))}
       </Swiper>
     </div>
   );
