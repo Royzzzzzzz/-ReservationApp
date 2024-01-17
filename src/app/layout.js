@@ -3,28 +3,16 @@ import "./globals.css";
 import Box from "@mui/material/Box";
 import ReduxProvider from "@/redux/provider";
 import Header from "./_components/header";
-
-export const metadata = {
-  openGraph: {
-    title: "Next.js",
-    description: "포장을위한 포장에 의한",
-    url: "https://nextjs.org",
-    siteName: "Next.js",
-    images: [
-      {
-        url: "https://nextjs.org/og.png",
-        width: 800,
-        height: 600,
-      },
-    ],
-    locale: "en-US",
-    type: "website",
-  },
-};
+import { metadata } from "./page";
 
 export default async function RootLayout({ children }) {
   return (
     <html>
+      <head>
+        {/* metadata를 여기서 사용할 수 있습니다. */}
+        <title>{metadata.title}</title>
+        <meta name="description" content={metadata.description} />
+      </head>
       <body>
         <Box sx={{ maxWidth: "1024px", margin: "auto" }}>
           <Header />
