@@ -1,5 +1,8 @@
-import React from 'react'
-import 'styles/loginform.css'
+import React from 'react';
+import '../../styles/loginform.css';
+import dynamic from 'next/dynamic';
+
+const LoginComponent = dynamic(() => import('./LoginComponent.js'), { ssr: false });
 
 const LoginForm = () => {
   return (
@@ -24,7 +27,10 @@ const LoginForm = () => {
             <label for="check">이메일 기억하기</label>
           </div>
 
-          <button class="login_btn"><span>로그인</span></button>
+          <div>
+            <button class="login_btn"><span>로그인</span></button>
+            <LoginComponent />
+          </div>
         
           <ul class="login_join">
             <li>

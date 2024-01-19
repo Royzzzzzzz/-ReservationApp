@@ -53,7 +53,8 @@
   font-size: 0.85em;
   color: #666;
 }
-.sign-up-container button.login_btn{ 
+.sign-up-container button.login_btn ,
+.css-1r70zqr-MuiButtonBase-root-MuiButton-root{ 
   width: 100%;
   height: 50px;
   margin: 10px 0;
@@ -133,4 +134,24 @@
   font-weight: 400;
   border: 1px solid #fff;
   background: linear-gradient(to right, #FF4B2B, #FF416C);
+}
+
+/* loginForm 감싸고 있는 라이브러리 css 조정 */
+.css-2hub59{
+  height: 100%;
+}
+.css-cuefkz-MuiContainer-root{
+  height: 100%;
+}
+.css-1r70zqr-MuiButtonBase-root-MuiButton-root{
+  margin-top: 0;
+  color: #fff;
+  text-transform: none;
+  padding: 0;
+  box-shadow: none;
+  border: 1px solid #fff;
+}
+
+.css-1r70zqr-MuiButtonBase-root-MuiButton-root:hover{
+  border: 1px solid #fff !important;
 }

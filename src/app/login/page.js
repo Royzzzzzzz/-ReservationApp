@@ -5,14 +5,16 @@ import TextField from '@mui/material/TextField';
 import Button from '@mui/material/Button';
 import Typography from '@mui/material/Typography';
 import dynamic from 'next/dynamic';
+import LoginForm from './LoginForm';
 
-const LoginComponent = dynamic(() => import('./LoginComponent.js'), { ssr: false });
+// const LoginComponent = dynamic(() => import('./LoginComponent.js'), { ssr: false });
 
 export default function Login() {
 
     return (
         <Container maxWidth="sm">
-            <Box
+            <LoginForm/>
+            {/* <Box
                 sx={{
                     marginTop: 8,
                     display: 'flex',
@@ -24,7 +26,8 @@ export default function Login() {
                     로그인
                 </Typography>
                 <Box component="form" noValidate sx={{ mt: 1 }}>
-                    <TextField
+                   */}
+                    {/* <TextField
                         margin="normal"
                         required
                         fullWidth
@@ -51,10 +54,10 @@ export default function Login() {
                         sx={{ mt: 3, mb: 2 }}
                     >
                         로그인
-                    </Button>
-                    <LoginComponent />
-                </Box>
-            </Box>
+                    </Button> */}
+                    {/* <LoginComponent /> */}
+                {/* </Box>
+            </Box> */}
 
         </Container>
     );
