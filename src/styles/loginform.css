@@ -155,3 +155,13 @@
 .css-1r70zqr-MuiButtonBase-root-MuiButton-root:hover{
   border: 1px solid #fff !important;
 }
+
+@media screen and (max-width: 990px){
+  #wrap .overlay{display: none;}
+  #wrap .container{display: block; width: 90%;}
+  #wrap .container .sign-up-container{width: 100%; padding: 60px;}
+  .css-cuefkz-MuiContainer-root{margin: 0 auto; padding: 0;}
+}
+@media screen and (max-width: 320px){
+  #wrap .container .sign-up-container{padding: 30px;}
+}
