@@ -41,7 +41,7 @@ const JoinForm = () => {
       <div class="terms">
         <h4>약관</h4>
         <div class="agree_box">
-          
+          {/* 약관 영역 예정 */}
         </div>
       </div>
 
