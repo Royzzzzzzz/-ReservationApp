@@ -30,19 +30,19 @@ const JoinForm = () => {
           </div>
         </div>
         <div>
-          <label for="birth">생년월일</label>
+          <label for="phone">핸드폰번호</label>
           <div class="input_layout">
-            <input name="birth" id="birth" type="number" placeholder="YYYYMMDD" onblur="this.placeholder='YYYYMMDD'" onfocus="this.placeholder=''"></input>
+            <input name="phone" id="phone" type="number" placeholder="'-'빼고 입력해주세요." onblur="this.placeholder=''-'빼고 입력해주세요.'" onfocus="this.placeholder=''"></input>
           </div>
-          <button></button>
+          <button class="verify_btn">인증하기</button>
         </div>
-        <div>
-          
-        </div>
+
       </div>
       <div class="terms">
         <h4>약관</h4>
-        <div class="agree_box"></div>
+        <div class="agree_box">
+          
+        </div>
       </div>
 
     </div>
