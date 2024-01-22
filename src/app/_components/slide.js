@@ -1,9 +1,7 @@
+import SwiperCore, { Navigation, Pagination, Autoplay } from "swiper/core";
 import { Swiper, SwiperSlide } from "swiper/react";
-import { Navigation, Scrollbar, Autoplay } from "swiper/modules";
-import SwiperCore from "swiper";
-import "swiper/css";
-import "swiper/css/navigation";
-import "swiper/css/pagination";
+
+SwiperCore.use([Navigation, Pagination, Autoplay]);
 const slideData = [
   {
     id: 1,
@@ -17,17 +15,16 @@ const slideData = [
   },
 ];
 export default function AdCarousel() {
-  SwiperCore.use([Navigation, Scrollbar, Autoplay]);
   return (
     <div className="swiper-container">
       <Swiper
-        loop={true} // 슬라이드 루프
-        spaceBetween={50} // 슬라이스 사이 간격
-        slidesPerView={1} // 보여질 슬라이스 수
-        navigation={false} // prev, next button
+        loop={true}
+        spaceBetween={50}
+        slidesPerView={1}
+        navigation={false}
         autoplay={{
           delay: 2500,
-          disableOnInteraction: false, // 사용자 상호작용시 슬라이더 일시 정지 비활성
+          disableOnInteraction: false,
         }}
       >
         {slideData.map((slide) => (

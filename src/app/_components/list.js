@@ -12,6 +12,11 @@ import {
   Tabs,
   Tab,
 } from "@mui/material";
+import SwiperCore, { Navigation } from "swiper";
+import { Swiper, SwiperSlide } from "swiper/react";
+import "swiper/swiper-bundle.css";
+
+SwiperCore.use([Navigation]);
 
 export default function Home() {
   // useDispatch 훅을 사용하여 dispatch 함수를 가져옵니다.

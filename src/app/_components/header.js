@@ -10,6 +10,7 @@ import InputBase from "@mui/material/InputBase";
 import Button from "@mui/material/Button";
 import Box from "@mui/material/Box";
 import SearchIcon from "@mui/icons-material/Search";
+import Hidden from "@mui/material/Hidden";
 
 export default async function RootLayout({ children }) {
   return (
@@ -25,14 +26,16 @@ export default async function RootLayout({ children }) {
         className="header"
       >
         <Toolbar>
-          <IconButton
-            edge="start"
-            color="black"
-            aria-label="menu"
-            sx={{ mr: 1 }}
-          >
-            <MenuIcon />
-          </IconButton>
+          <Hidden mdUp>
+            <IconButton
+              edge="start"
+              color="black"
+              aria-label="menu"
+              sx={{ mr: 1 }}
+            >
+              <MenuIcon />
+            </IconButton>
+          </Hidden>
           <Typography
             variant="h5"
             component="div"
