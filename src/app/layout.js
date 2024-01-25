@@ -3,6 +3,7 @@ import Box from "@mui/material/Box";
 import ReduxProvider from "@/redux/provider";
 import Header from "./_components/header";
 import metadata from "./metadata";
+import Provider from "./Provider";
 
 export default async function RootLayout({ children }) {
   return (
@@ -14,7 +15,9 @@ export default async function RootLayout({ children }) {
       <body>
         <Box sx={{ maxWidth: "1024px", margin: "auto" }}>
           <Header />
-          <ReduxProvider>{children}</ReduxProvider>
+          <ReduxProvider>
+            <Provider>{children}</Provider>
+          </ReduxProvider>
         </Box>
       </body>
     </html>
